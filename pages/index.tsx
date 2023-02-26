@@ -3,6 +3,10 @@ import styles from '../styles/Home.module.css'
 
 import Navbar from '../components/navbar/navbar'
 import Hero from '../components/hero/hero'
+import Shorten from '../components/shorten/shorten'
+import About from '../components/about/about'
+import GetStarted from '../components/get-started/getstarted'
+import Footer from '../components/footer/footer'
 
 export default function Home() {
   return (
@@ -19,11 +23,13 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        
+        <Shorten />
+        <About />
+        <GetStarted />
       </main>
 
       <footer className={styles.footer}>
-        
+        <Footer />
       </footer>
     </div>
   )

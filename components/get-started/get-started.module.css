@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 4.5rem var(--var-paddind-6vw);
+    text-align: center;
+    gap: 0.8rem;
+    background-image: url("/images/bg-boost-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    background-color: var(--var-color-dark-violet);
+}
+.heading {
+    color: #fff;
+}

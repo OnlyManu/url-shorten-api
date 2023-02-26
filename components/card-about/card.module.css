@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 4.5rem var(--var-paddind-6vw) 2rem var(--var-paddind-6vw);
+    min-height: 15rem;
+    gap: 0.8rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    text-align: center;
+}
+.icon_wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--var-color-dark-violet);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+.title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--var-color-very-dark-blue);
+}
+.description {
+    font-size: 0.9rem;
+}

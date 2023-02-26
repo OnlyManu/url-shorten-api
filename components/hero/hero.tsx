@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "./hero.module.css"
+import utils from "../../styles/utils.module.css"
 
 export default function Hero() {
     return (
@@ -17,7 +18,7 @@ export default function Hero() {
                     <h1 className={styles.heading}>More than just shorter links</h1>
                     <p className={styles.description}>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
                 </div>
-                <button className={styles.btn_getstarted}>Get Started</button>
+                <button className={styles.btn+" "+utils.btn}>Get Started</button>
             </div>
         </div>
     )

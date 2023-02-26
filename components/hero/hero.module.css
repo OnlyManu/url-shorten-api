@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     padding-top: 1rem;
-    padding-bottom: 6rem;
+    padding-bottom: 9rem;
     gap: 2rem;
     overflow: hidden;
 }
@@ -32,15 +32,3 @@
     color: var(--var-color-very-dark-blue);
 }
 
-.btn_getstarted {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 11rem;
-    height: 2.8rem;
-    border-radius: 1.4rem;
-    background-color: var(--var-color-cyan);
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff;
-}

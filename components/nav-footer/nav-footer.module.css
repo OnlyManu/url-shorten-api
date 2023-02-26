@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.title {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.link {
+    color: var(--var-color-gray);
+    font-size: 0.8rem;
+}

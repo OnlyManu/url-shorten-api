@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem var(--var-paddind-6vw) 4rem var(--var-paddind-6vw);
+    gap: 5rem;
+}
+.text_bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.heading {
+    color: var(--var-color-very-dark-blue);
+}
+.cardlist {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.cardlist::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 8px;
+    background-color: var(--var-color-cyan);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

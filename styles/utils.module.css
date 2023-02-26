@@ -1,0 +1,17 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11rem;
+    height: 2.8rem;
+    border-radius: 1.4rem;
+    background-color: var(--var-color-cyan);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.headingMd {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
