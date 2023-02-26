@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--var-paddind-6vw);
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.navigation {
+    display: none;
+}
+
+.btn_burger {
+    position: relative;
+    width: 1.3rem;
+    height: 1.2rem;
+    background-color: transparent;
+    border-top: 3px solid var(--var-color-grayish-violet);
+    border-bottom: 3px solid var(--var-color-grayish-violet);
+    border-left: none;
+    border-right: none;
+}
+.btn_burger::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--var-color-grayish-violet);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
