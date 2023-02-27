@@ -32,3 +32,24 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 5rem var(--var-paddind-6vw) 5rem var(--var-paddind-6vw);
+    }
+    .description {
+        width: 24rem;
+    }
+    .cardlist {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+    }
+    .cardlist::after {
+        height: 8px;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(50%);
+    }
+}

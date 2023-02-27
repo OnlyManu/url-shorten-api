@@ -8,7 +8,7 @@ export default function About() {
         <div className={styles.container}>
             <div className={styles.text_bloc}>
                 <h2 className={styles.heading+" "+utils.headingMd}>Advanced Statistics</h2>
-                <p className={styles.description}>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+                <p className={styles.description+" "+utils.txtMd}>Track how your links are performing across the web with our advanced statistics dashboard.</p>
             </div>
             <div className={styles.cardlist}>
                 <CardAbout

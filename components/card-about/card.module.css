@@ -31,3 +31,34 @@
 .description {
     font-size: 0.9rem;
 }
+
+@media screen and (min-width: 768px) {
+    .container {
+        min-height: auto;
+        height: 14.8rem;
+        padding: 3.5rem 2vw 2rem 2vw;
+        text-align: left;
+    }
+    .container:nth-child(2) {
+        margin-top: 1rem;
+    }
+    .container:nth-child(3) {
+        margin-top: 2rem;
+    }
+    .icon_wrapper {
+        width: 4rem;
+        height: 4rem;
+        left: 2vw;
+        transform: translateX(0%) translateY(-50%);
+    }
+    .icon {
+        width: 30px;
+        height: auto;
+    }
+    .title {
+        font-size: 0.9rem;
+    }
+    .description {
+        font-size: 0.74rem;
+    }
+}

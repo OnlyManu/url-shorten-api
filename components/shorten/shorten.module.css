@@ -20,7 +20,7 @@
     background-size: 74%;
     background-position: 100% -100%;
     background-color: var(--var-color-dark-violet);
-    left: 6vw;
+    left: var(--var-paddind-6vw);
     top: 0;
     transform: translateY(-50%);
 }
@@ -41,4 +41,26 @@
     font-size: 1rem;
     font-weight: 700;
     color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 3.3rem var(--var-paddind-6vw) 0 var(--var-paddind-6vw);
+    }
+    .form {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        padding: 2rem 2.2rem;
+        background-image: url("/images/bg-shorten-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+    .btn {
+        height: 2.4rem;
+        padding: 0 1rem;
+    }
+    .ipt {
+        height: 2.4rem;
+    }
 }

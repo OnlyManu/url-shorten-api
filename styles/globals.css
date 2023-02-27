@@ -28,6 +28,9 @@ body {
   color: var(--var-color-grayish-violet);
 }
 
+.navigation_open {
+  overflow: hidden;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -39,4 +42,10 @@ ul {
 button {
   appearance: none;
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --var-paddind-6vw: 4vw;   
+  }
 }
