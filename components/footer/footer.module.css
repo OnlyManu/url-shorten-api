@@ -20,6 +20,9 @@
     align-items: center;
     gap: 1rem;
 }
+.icon:hover path {
+    fill: var(--var-color-cyan);
+}
 
 @media screen and (min-width: 1024px) {
     .container {
@@ -34,6 +37,12 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         align-items: flex-start;
-        gap: 2.5rem;
+        gap: 1vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .navlist {
+        gap: 3.5vw;
     }
 }

@@ -65,7 +65,7 @@
 
 @media screen and (min-width: 1024px) {
     .container {
-        padding: 4rem 1.5rem 0 1.5rem;
+        padding: 5vw 1.8vw 0 1.8vw;
         height: 18.5vw;
     }
     .container:nth-child(2) {
@@ -77,14 +77,15 @@
     .icon_wrapper {
         width: 5rem;
         height: 5rem;
+        left: 1.8vw;
     }
     .icon {
         width: 30px;
     }
     .title {
-        font-size: 1.24rem;
+        font-size: 1.54vw;
     }
     .description {
-        font-size: 0.88rem;
+        font-size: 1.1vw;
     }
 }

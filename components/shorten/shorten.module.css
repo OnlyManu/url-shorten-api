@@ -24,25 +24,6 @@
     top: 0;
     transform: translateY(-50%);
 }
-.ipt {
-    height: 2.2rem;
-    padding: 0.6rem;
-    font-size: 1rem;
-    color: var(--var-color-gray);
-    border: none;
-    border-radius: 0.3rem;
-}
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--var-color-cyan);
-    height: 2.2rem;
-    border-radius: 0.3rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #fff;
-}
 
 @media screen and (min-width: 768px) {
     .container {
@@ -57,13 +38,6 @@
         background-size: cover;
         background-position: 50%;
     }
-    .btn {
-        height: 2.4rem;
-        padding: 0 1rem;
-    }
-    .ipt {
-        height: 2.4rem;
-    }
 }
 @media screen and (min-width: 1024px) {
     .container {
@@ -71,17 +45,5 @@
     }
     .form {
         padding: 3.6vw;
-    }
-    .ipt {
-        height: 4.2vw;
-        padding: 0 1.5rem;
-        border-radius: 0.4rem;
-        font-size: 1.5vw;
-    }
-    .btn {
-        height: 4.2vw;
-        padding: 0 2.4vw;
-        border-radius: 0.4rem;
-        font-size: 1.5vw;
     }
 }

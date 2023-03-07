@@ -36,6 +36,9 @@
     font-weight: 700;
     color: #fff;
 }
+.link:hover {
+    color: var(--var-color-dark-violet);
+}
 .action_buttons {
     display: flex;
     flex-direction: column;
@@ -50,10 +53,6 @@
     width: fit-content;
     background-color: transparent;
     border: none;
-}
-.btn_signup {
-    font-size: 1rem !important;
-    width: 100% !important;
 }
 .btn_burger {
     position: relative;
@@ -86,9 +85,6 @@
     }
     .action_buttons {
         gap: 2rem;
-    }
-    .btn_signup {
-        width: 11rem !important;
     }
 }
 
@@ -129,12 +125,6 @@
         flex-direction: row;
         gap: 0.5rem;
         padding: 0;
-    }
-    .btn_signup {
-        width: 7rem !important;
-        font-size: 1.28vw !important;
-        font-weight: 700 !important;
-        height: 3.4vw !important;
     }
     .btn_login {
         display: flex;

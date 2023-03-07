@@ -30,7 +30,7 @@ export default function Navbar() {
                 </nav>
                 <div className={styles.action_buttons}>
                     <button className={styles.btn_login}>Login</button>
-                    <button className={styles.btn_signup+" "+utils.btn}>Sign Up</button>
+                    <button className={utils.btn_sign_up}>Sign Up</button>
                 </div>
             </div>
             <button className={styles.btn_burger} onClick = {openCloseNavigation} />

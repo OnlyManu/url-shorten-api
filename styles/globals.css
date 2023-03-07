@@ -52,6 +52,12 @@ button {
 }
 @media screen and (min-width: 1024px) {
   :root {
+    --var-paddind-6vw: 9vw;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
     --var-paddind-6vw: 11vw;
   }
 }
