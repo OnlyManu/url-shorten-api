@@ -21,5 +21,5 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: var(--var-color-very-dark-blue);
+  background-color: var(--var-color-very-dark-violet);
 }

@@ -42,10 +42,16 @@ ul {
 button {
   appearance: none;
   border: none;
+  font-family: 'Poppins', sans-serif;;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   :root {
-    --var-paddind-6vw: 4vw;   
+    --var-paddind-6vw: 5vw;   
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --var-paddind-6vw: 11vw;
   }
 }

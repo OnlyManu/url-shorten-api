@@ -17,3 +17,15 @@
     color: var(--var-color-gray);
     font-size: 0.8rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .container {
+        gap: 1rem;
+    }
+    .title {
+        font-size: 0.88rem;
+    }
+    .link {
+        font-size: 0.88rem;
+    }
+}

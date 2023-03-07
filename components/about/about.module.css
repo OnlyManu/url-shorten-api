@@ -35,7 +35,7 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        padding: 5rem var(--var-paddind-6vw) 5rem var(--var-paddind-6vw);
+        padding: 5rem var(--var-paddind-6vw) 9rem var(--var-paddind-6vw);
     }
     .description {
         width: 24rem;
@@ -51,5 +51,18 @@
         left: 0;
         top: 50%;
         transform: translateY(50%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 7.5vw var(--var-paddind-6vw) 14vw var(--var-paddind-6vw);
+        gap: 7vw;
+    }
+    .description {
+        width: 44vw;
+    }
+    .cardlist {
+        gap: 2.5vw;
     }
 }

@@ -20,3 +20,20 @@
     align-items: center;
     gap: 1rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 5vw var(--var-paddind-6vw) 5.5vw var(--var-paddind-6vw);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0;
+        text-align: left;
+    }
+    .navlist {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+}

@@ -25,3 +25,9 @@
         padding: 3rem var(--var-paddind-6vw);       
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 4vw var(--var-paddind-6vw);
+    }
+}

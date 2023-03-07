@@ -23,11 +23,26 @@
 
 @media screen and (min-width: 768px) {
     .btn {
-        width: 9rem;
-        font-size: 1rem;
+        width: 8rem;
+        font-size: 0.9rem;
         height: 2.6rem;
     }
     .txtMd {
         font-size: 0.8rem;
     }    
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        width: 13.5vw;
+        font-size: 1.4vw;
+        border-radius: 1.5rem;
+        height: 3.8vw;
+    }
+    .txtMd {
+        font-size: 1.54vw;
+    }
+    .headingMd {
+        font-size: 3vw;
+    }
 }

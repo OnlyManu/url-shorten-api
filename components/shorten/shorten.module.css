@@ -28,8 +28,9 @@
     height: 2.2rem;
     padding: 0.6rem;
     font-size: 1rem;
+    color: var(--var-color-gray);
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 0.3rem;
 }
 .btn {
     display: flex;
@@ -37,7 +38,7 @@
     justify-content: center;
     background-color: var(--var-color-cyan);
     height: 2.2rem;
-    border-radius: 0.25rem;
+    border-radius: 0.3rem;
     font-size: 1rem;
     font-weight: 700;
     color: #fff;
@@ -62,5 +63,25 @@
     }
     .ipt {
         height: 2.4rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 5.5vw var(--var-paddind-6vw) 0 var(--var-paddind-6vw);
+    }
+    .form {
+        padding: 3.6vw;
+    }
+    .ipt {
+        height: 4.2vw;
+        padding: 0 1.5rem;
+        border-radius: 0.4rem;
+        font-size: 1.5vw;
+    }
+    .btn {
+        height: 4.2vw;
+        padding: 0 2.4vw;
+        border-radius: 0.4rem;
+        font-size: 1.5vw;
     }
 }

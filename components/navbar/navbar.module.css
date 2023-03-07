@@ -91,3 +91,62 @@
         width: 11rem !important;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-top: 8vh;
+        gap: 2rem;
+    }
+    .navigation {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: none;
+        background-color: transparent;
+        border-radius: none;
+        width: 100%;
+        padding: 0;
+    }
+    .navigation.open {
+        display: flex;
+    }
+    .nav {
+        display: flex;
+    }
+    .navlinks {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0;
+        border-bottom: none;
+    }
+    .link {
+        font-size: 1.28vw;
+        color: var(--var-color-grayish-violet);
+    }
+    .action_buttons {
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0;
+    }
+    .btn_signup {
+        width: 7rem !important;
+        font-size: 1.28vw !important;
+        font-weight: 700 !important;
+        height: 3.4vw !important;
+    }
+    .btn_login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 1.28vw;
+        color: var(--var-color-grayish-violet);
+        font-weight: 700;
+        width: 7rem;
+    }
+    .btn_burger {
+        display: none;
+    }
+}
