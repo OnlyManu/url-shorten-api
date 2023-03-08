@@ -77,21 +77,32 @@
 
 @media screen and (min-width: 768px) {
     .btn {
-        width: 8rem;
-        font-size: 0.9rem;
-        height: 2.6rem;
+        width: 19rem;
+        font-size: 2rem;
+        height: 5.2rem;
+        border-radius: 2.6rem;
     }
     .btn_sign_up {
-        width: 11rem;
+        font-size: 1.6rem;
+        width: 100%;
+        height: 4.2rem;
+        border-radius: 2.1rem;
     }
     .btn_form {
         padding: 0 1rem;
     }
+    .ipt {
+        padding: 0 1.5rem;
+    }
     .btn_form, .ipt {
-        height: 2.4rem;
+        font-size: 1.8rem;
+        height: 4.3rem;
+    }
+    .headingMd {
+        font-size: 3rem;
     }
     .txtMd {
-        font-size: 0.8rem;
+        font-size: 1.8rem;
     }    
 }
 

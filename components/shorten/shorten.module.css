@@ -27,16 +27,11 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        padding: 3.3rem var(--var-paddind-6vw) 0 var(--var-paddind-6vw);
+        padding: 7.6rem var(--var-paddind-6vw) 0 var(--var-paddind-6vw);
     }
     .form {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        padding: 2rem 2.2rem;
-        background-image: url("/images/bg-shorten-desktop.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50%;
+        padding: 2.4rem;
+        gap: 2rem;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -44,6 +39,12 @@
         padding: 5.5vw var(--var-paddind-6vw) 0 var(--var-paddind-6vw);
     }
     .form {
+        display: grid;
+        grid-template-columns: 1fr auto;
         padding: 3.6vw;
+        background-image: url("/images/bg-shorten-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
     }
 }

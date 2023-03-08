@@ -18,16 +18,18 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        background-image: url("/images/bg-boost-desktop.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 100%;
-        padding: 3rem var(--var-paddind-6vw);       
+        padding: 10rem var(--var-paddind-6vw);
+        gap: 1.2rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .container {
+        background-image: url("/images/bg-boost-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100%;
         padding: 4vw var(--var-paddind-6vw);
+        gap: 0.8rem;
     }
 }

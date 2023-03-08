@@ -35,38 +35,33 @@
 @media screen and (min-width: 768px) {
     .container {
         min-height: auto;
-        height: 14.8rem;
-        padding: 3.5rem 2vw 2rem 2vw;
-        text-align: left;
-    }
-    .container:nth-child(2) {
-        transform: translateY(1rem);
-    }
-    .container:nth-child(3) {
-        transform: translateY(2rem);
+        height: 26rem;
+        padding: 7rem 6vw 4rem 6vw;
+        gap: 1.2rem;
     }
     .icon_wrapper {
-        width: 4rem;
-        height: 4rem;
-        left: 2vw;
-        transform: translateX(0%) translateY(-50%);
+        width: 8rem;
+        height: 8rem;
     }
     .icon {
-        width: 30px;
+        width: 60px;
         height: auto;
     }
     .title {
-        font-size: 0.9rem;
+        font-size: 1.8rem;
     }
     .description {
-        font-size: 0.74rem;
+        font-size: 1.7rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .container {
+        min-height: auto;
         padding: 5vw 1.8vw 0 1.8vw;
         height: 18.5vw;
+        gap: 0.8rem;
+        text-align: left;
     }
     .container:nth-child(2) {
         transform: translateY(3vw);
@@ -78,6 +73,7 @@
         width: 5rem;
         height: 5rem;
         left: 1.8vw;
+        transform: translateX(0%) translateY(-50%);
     }
     .icon {
         width: 30px;

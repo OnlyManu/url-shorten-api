@@ -24,6 +24,27 @@
     fill: var(--var-color-cyan);
 }
 
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 5rem 0 6rem 0;
+        gap: 5rem;
+    }
+    .logo {
+        width: 9rem;
+        height: auto;
+    }
+    .navlist {
+        gap: 5rem;
+    }
+    .social_icons {
+        gap: 2.2rem;
+    }
+    .icon {
+        width: 2.8rem;
+        height: auto;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .container {
         padding: 5vw var(--var-paddind-6vw) 5.5vw var(--var-paddind-6vw);
@@ -33,11 +54,20 @@
         gap: 0;
         text-align: left;
     }
+    .logo {
+        width: auto;
+    }
     .navlist {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         align-items: flex-start;
         gap: 1vw;
+    }
+    .icon {
+        width: auto;
+    }
+    .social_icons {
+        gap: 1rem;       
     }
 }
 

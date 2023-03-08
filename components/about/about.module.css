@@ -35,22 +35,14 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        padding: 5rem var(--var-paddind-6vw) 9rem var(--var-paddind-6vw);
-    }
-    .description {
-        width: 24rem;
+        padding: 8rem var(--var-paddind-6vw) 9rem var(--var-paddind-6vw);
+        gap: 8rem;
     }
     .cardlist {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.8rem;
+        gap: 8rem;
     }
     .cardlist::after {
-        height: 8px;
-        width: 100%;
-        left: 0;
-        top: 50%;
-        transform: translateY(50%);
+        width: 14px;
     }
 }
 
@@ -63,6 +55,15 @@
         width: 44vw;
     }
     .cardlist {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 2.5vw;
+    }
+    .cardlist::after {
+        height: 8px;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(50%);
     }
 }

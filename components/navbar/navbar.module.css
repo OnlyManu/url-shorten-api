@@ -76,15 +76,38 @@
 }
 
 @media screen and (min-width: 768px) {
+    .container {
+        margin-top: 5vh;
+    }
+    .logo {
+        width: 9rem;
+        height: auto;
+    }
+    .btn_burger {
+        width: 1.8rem;
+        height: 1.6rem;
+        border-top: 4px solid var(--var-color-grayish-violet);
+        border-bottom: 4px solid var(--var-color-grayish-violet);
+    }
+    .btn_burger::after {
+        height: 4px;
+        background-color: var(--var-color-grayish-violet);
+    }
     .navigation {
         top: 3.5rem;
-        padding: 1rem 6vw;
+        padding: 3rem 8vw;
     }
     .navlinks {
-        gap: 2rem;
+        gap: 2.5rem;
+    }
+    .link {
+        font-size: 1.6rem;
     }
     .action_buttons {
-        gap: 2rem;
+        gap: 2.5rem;
+    }
+    .btn_login {
+        font-size: 1.6rem;
     }
 }
 
@@ -92,6 +115,9 @@
     .container {
         margin-top: 8vh;
         gap: 2rem;
+    }
+    .logo {
+        width: auto;
     }
     .navigation {
         position: static;

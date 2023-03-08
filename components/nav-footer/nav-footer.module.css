@@ -21,12 +21,29 @@
     color: var(--var-color-cyan);
 }
 
+@media screen and (min-width: 768px) {
+    .container {
+        gap: 2rem;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    .navlinks {
+        gap: 0.8rem;
+    }
+    .link {
+        font-size: 1.6rem;
+    }
+}
 @media screen and (min-width: 1024px) {
     .container {
         gap: 1rem;
     }
     .title {
         font-size: 1.1vw;
+    }
+    .navlinks {
+        gap: 0.4rem;
     }
     .link {
         font-size: 1.1vw;
