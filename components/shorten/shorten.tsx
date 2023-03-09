@@ -64,7 +64,7 @@ export default function Shorten() {
         <div className={styles.container}>
             <form method="post" className={styles.form} onSubmit={shortenLink}>
                 <div className={utils.ipt_group}>
-                    <input type="text" className={formErrorState ? utils.ipt+" "+utils.ipt_error : utils.ipt} value={link} onChange={handleChange} placeholder="Shorten a link here..." />
+                    <input type="text" className={formErrorState ? utils.ipt+" "+utils.ipt_error : utils.ipt} value={link} onChange={handleChange} placeholder="Shorten a link here..." aria-label="Link" />
                     {formErrorState && <span className={utils.ipt_error_message}>Please add a link</span>}
                 </div>
                 <button type="submit" className={utils.btn_form}>Shorten It!</button>
