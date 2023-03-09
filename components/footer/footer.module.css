@@ -47,7 +47,7 @@
 
 @media screen and (min-width: 1024px) {
     .container {
-        padding: 5vw var(--var-paddind-6vw) 5.5vw var(--var-paddind-6vw);
+        padding: 5vw var(--var-side-padding) 5.5vw var(--var-side-padding);
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;

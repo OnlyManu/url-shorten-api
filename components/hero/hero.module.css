@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 0 var(--var-paddind-6vw);
+    padding: 0 var(--var-side-padding);
 }
 .text_bloc {
     display: flex;
@@ -65,9 +65,9 @@
         grid-auto-flow: dense;
         direction: rtl;
         align-items: center;
-        padding-top: 4.5vw;
-        padding-bottom: 9vw;
-        padding-left: var(--var-paddind-6vw);
+        padding-top: 3.5vw;
+        padding-bottom: 10vw;
+        padding-left: var(--var-side-padding);
         gap: 0;
     }
     .illustration_wrapper {

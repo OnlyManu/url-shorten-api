@@ -9,7 +9,7 @@
   --var-color-very-dark-blue: hsl(255, 11%, 22%);
   --var-color-very-dark-violet: hsl(260, 8%, 14%);
 
-  --var-paddind-6vw: 6vw;
+  --var-side-padding: 6vw;
 }
 
 *, *::after, *::before {
@@ -47,17 +47,17 @@ button {
 
 @media screen and (min-width: 768px) {
   :root {
-    --var-paddind-6vw: 8vw;   
+    --var-side-padding: 8vw;   
   }
 }
 @media screen and (min-width: 1024px) {
   :root {
-    --var-paddind-6vw: 9vw;
+    --var-side-padding: 9vw;
   }
 }
 
 @media screen and (min-width: 1280px) {
   :root {
-    --var-paddind-6vw: 11vw;
+    --var-side-padding: 11vw;
   }
 }

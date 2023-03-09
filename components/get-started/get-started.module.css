@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 4.5rem var(--var-paddind-6vw);
+    padding: 4.5rem var(--var-side-padding);
     text-align: center;
     gap: 0.8rem;
     background-image: url("/images/bg-boost-mobile.svg");
@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        padding: 10rem var(--var-paddind-6vw);
+        padding: 10rem var(--var-side-padding);
         gap: 1.2rem;
     }
 }
@@ -29,7 +29,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 100%;
-        padding: 4vw var(--var-paddind-6vw);
+        padding: 4vw var(--var-side-padding);
         gap: 0.8rem;
     }
 }

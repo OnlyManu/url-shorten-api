@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--var-paddind-6vw);
+    padding: 0 var(--var-side-padding);
     margin-top: 2rem;
     width: 100%;
 }
@@ -13,11 +13,11 @@
     position: absolute;
     display: none;
     flex-direction: column;
-    padding: 0.5rem var(--var-paddind-6vw);
+    padding: 0.5rem var(--var-side-padding);
     background-color: var(--var-color-dark-violet);
     border-radius: 0.5rem;
     top: 3rem;
-    left: var(--var-paddind-6vw);
+    left: var(--var-side-padding);
     width: calc(100% - (var(--var-paddind-6vw) * 2));
 }
 .navigation.open {
