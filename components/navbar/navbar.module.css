@@ -18,7 +18,7 @@
     border-radius: 0.5rem;
     top: 3rem;
     left: var(--var-side-padding);
-    width: calc(100% - (var(--var-paddind-6vw) * 2));
+    width: calc(100% - (var(--var-side-padding) * 2));
 }
 .navigation.open {
     display: flex;

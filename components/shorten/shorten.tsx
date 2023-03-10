@@ -1,4 +1,4 @@
-import { FormEvent, SyntheticEvent, useState } from "react"
+import { FormEvent, MouseEvent, SyntheticEvent, useState } from "react"
 import styles from "./shorten.module.css"
 import utils from "../../styles/utils.module.css"
 
@@ -49,7 +49,7 @@ export default function Shorten() {
         }        
     }
 
-    const copyLink = async (linkIndex: number, link: string): Promise<void> => {
+    const copyLink = async (event: MouseEvent<HTMLButtonElement>, linkIndex: number): Promise<void> => {
         let currentShortenResultState: Array<IshortenResult> = [...ShortenResultstate]
         
         if (!currentShortenResultState[linkIndex].clicked) {
@@ -57,7 +57,8 @@ export default function Shorten() {
             setShortenResultState(currentShortenResultState)    
         }
 
-        await navigator.clipboard.writeText(link)
+        
+        await navigator.clipboard.writeText(event.currentTarget.value)
     }
 
     return (
@@ -76,7 +77,7 @@ export default function Shorten() {
                             <span className={styles.link}>{ shortenResult.link }</span>
                             <span className={styles.shrt_link}>{ shortenResult.shrtLink }</span>
                         </div>
-                        <button className={shortenResult.clicked ? utils.btn_copy + " " + utils.btn_copy_clicked : utils.btn_copy} onClick={async () => { copyLink(index, shortenResult.shrtLink) }}>
+                        <button className={shortenResult.clicked ? utils.btn_copy + " " + utils.btn_copy_clicked : utils.btn_copy} value={shortenResult.shrtLink} onClick={async (event) => { copyLink(event, index) }}>
                             {shortenResult.clicked ? "Copied!" : "Copy"}
                         </button>
                     </div>
