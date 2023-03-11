@@ -10,6 +10,7 @@ interface IshortenResult {
 
 
 export default function Shorten() {
+    const [loadingState, setLoadingState] = useState<boolean>(false)
     const [formErrorState, setFormErrorState] = useState<boolean>(false)
     const [link, setLink] = useState<string>("")
     const [ShortenResultstate, setShortenResultState] = useState<Array<IshortenResult>>([])
@@ -25,6 +26,7 @@ export default function Shorten() {
     
     const shortenLink = async (event: SyntheticEvent): Promise<void> => {
         event.preventDefault()
+        setLoadingState(true)
         if (link !== "") {
             try {
                 const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${link}`).then((result) => {
@@ -39,14 +41,15 @@ export default function Shorten() {
                     clicked: false
                 }
 
-                setShortenResultState(state => [...state, shortenResult])
+                setShortenResultState(state => [shortenResult, ...state])
                 setLink("")
             } catch (error) {
                 console.log(error)
             }
         } else {
             setFormErrorState(true)
-        }        
+        }
+        setLoadingState(false)
     }
 
     const copyLink = async (event: MouseEvent<HTMLButtonElement>, linkIndex: number): Promise<void> => {
@@ -70,6 +73,11 @@ export default function Shorten() {
                 </div>
                 <button type="submit" className={utils.btn_form}>Shorten It!</button>
             </form>
+            {loadingState && (
+                <div className={styles.loading}>
+                    <div className={styles.spinner}></div>
+                </div>
+            )}
             <div className={styles.results}>
                 {ShortenResultstate.map((shortenResult, index) => (
                     <div key={index} className={styles.result}>

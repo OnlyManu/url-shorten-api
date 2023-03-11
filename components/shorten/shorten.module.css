@@ -30,6 +30,23 @@
     flex-direction: column;
 }
 
+.loading {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+.spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid transparent;
+    border-top-color: var(--var-color-grayish-violet);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
 .result {
     display: flex;
     flex-direction: column;
@@ -38,6 +55,9 @@
     border-radius: 0.5rem;
     padding: 1rem;
     gap: 0.5rem;
+}
+.result:nth-child(1) {
+    margin-top: 1.5rem;
 }
 
 .links {
@@ -62,6 +82,15 @@
     color: var(--var-color-cyan);
 }
 
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .container {
         padding: 7.6rem var(--var-side-padding) 0 var(--var-side-padding);
@@ -70,10 +99,20 @@
         padding: 2.4rem;
         gap: 2rem;
     }
+    .loading {
+        margin-top: 2rem;
+    }
+    .spinner {
+        width: 3rem;
+        height: 3rem;
+    }
     .result {
         margin-top: 2rem;
         padding: 2rem;
         gap: 1rem;
+    }
+    .result:nth-child(1) {
+        margin-top: 2.5rem;
     }
     .link, .shrt_link {
         font-size: 1.5rem;
@@ -101,6 +140,13 @@
     .ipt_group {
         display: flex;
         flex-direction: column;
+    }
+    .loading {
+        margin-top: 2.5vw;
+    }
+    .spinner {
+        width: 3.5vw;
+        height: 3.5vw;
     }
     .result {
         display: grid;
